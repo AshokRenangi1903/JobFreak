@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Freak</title>
+</head>
+
+<body>
+    <section class="main">
+        <div class="left">
+            <a href="#" id="home" onclick="home()"><ion-icon name="home-outline"></ion-icon><span> Home</span></a>
+            <a href="#" id="contact" onclick="contact()"><ion-icon name="call-outline"></ion-icon><span>
+                    Contact</span></a>
+            <a href="#" id="info" onclick="info()"><ion-icon name="information-circle-outline"></ion-icon><span>
+                    Information</span></a>
+            <a href="#" id="guide" onclick="guide()"><ion-icon name="man-outline"></ion-icon><span> Guide</span></a>
+
+            <script>
+                function home() {
+                    document.getElementById("heading").innerHTML = "Home Page";
+                    document.getElementById("description").innerHTML = "This is about the home page";
+                }
+
+                function contact() {
+                    document.getElementById("heading").innerHTML = "Contact Page";
+                    document.getElementById("description").innerHTML = "This is about the contact page"
+                }
+                function guide() {
+                    document.getElementById("heading").innerHTML = "Guide Page";
+                    document.getElementById("description").innerHTML = "This is about the guide page"
+                }
+                function info() {
+                    document.getElementById("heading").innerHTML = "Information Page";
+                    document.getElementById("description").innerHTML = "This is about the information page"
+                }
+
+            </script>
+
+        </div>
+        <div class="right">
+            <h2 id="heading">Home Page</h2>
+            <p id="description">This is about the home page
+
+            </p>
+
+        </div>
+    </section>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+</html>
